@@ -1,0 +1,528 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+}
+
+
+/* Header */
+
+.top {
+    background-image: url("images/top-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+nav {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+}
+
+.logo {
+    padding-top: 15px;
+    margin-left: 164px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu ul {
+    margin-top: 30px;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    margin-right: 25px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #262626;
+    font-size: 1.0em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    border-top: 3px solid #ff6033;
+}
+
+.top-content {
+    width: 370px;
+    margin-left: 9%;
+    margin-top: 20%;
+}
+
+.top-content h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Chivo', sans-serif;
+}
+
+.top-content button {
+    margin-top: 15px;
+    background-color: #ff6033;
+    border: none;
+    color: white;
+    font-size: 1em;
+    height: 55px;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mouse {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    top: 16%;
+    background-image: url("images/mouse.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+/* end header */
+
+
+/* About */
+
+.about {
+    background-color: #00c4c4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img {
+    margin: 60px 25px;
+}
+
+.about-text {
+    width: 400px;
+    color: white;
+}
+
+.about-text h1 {
+    font-size: 75px;
+    margin: 10px 0;
+}
+
+
+/* Services */
+
+.services {
+    background-color: #70bfff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards {
+    width: 400px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.online-shopping,
+.quality,
+.delivery,
+.well-organized {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.online-shopping-text,
+.quality-text,
+.delivery-text,
+.well-organized-text {
+    margin: 0;
+    padding: 0;
+    border-right: 2px solid #9d9d9d;
+    width: 298px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.online-shopping-text p,
+.quality-text p,
+.delivery-text p,
+.well-organized-text p {
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.online-shopping-img,
+.quality-img,
+.delivery-img,
+.well-organized-img {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.online-shopping-img img,
+.quality-img img,
+.delivery-img img,
+.well-organized-img img {
+    align-self: center;
+}
+
+.services-tomatoes {
+    margin: 150px 0;
+    background-image: url("images/tomatoes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 465px;
+    height: 530px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.services-tomatoes h1 {
+    align-self: center;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+
+/* gallery */
+
+.gallery {
+    background-color: #ffe92f;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery-text {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery-text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.gallery-text p {
+    width: 500px;
+}
+
+.gallery-img {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.peach {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 100;
+}
+
+.blackberries {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: end;
+}
+
+.blueberries {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.glass {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: end;
+}
+
+.pepper {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: end;
+}
+
+
+/* Subscribe */
+
+.subscribe {
+    background-image: url("images/subscribe-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-auto-flow: row wrap;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+.subscribe-text {
+    margin: 50px 0 10px 100px;
+    width: 400px;
+    grid-column: 1/2;
+    grid-row: 1/1;
+    height: 200px;
+}
+
+.subscribe-text h1 {
+    font-size: 40px;
+}
+
+.subscribe-input {
+    width: 400px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: center;
+    background-color: #262626;
+    border: none;
+}
+
+.subscribe-button {
+    width: 150px;
+    height: 36px;
+    border: none;
+    text-align: center;
+    background-color: #96b92c;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    margin-left: 250px;
+    align-self: center;
+}
+
+
+/* Blog */
+
+.blog {
+    height: 860px;
+    background-color: #b07cf7;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.blog-text {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    z-index: 100;
+    margin-top: 100px;
+}
+
+.blog-text h1 {
+    font-size: 70px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+}
+
+.blog-text p {
+    width: 450px;
+    text-align: center;
+}
+
+.blog-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    bottom: 130px;
+    position: relative;
+    width: 100%;
+}
+
+.glass-kiwi {
+    background-image: url("images/kiwi-glass.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    height: 329px;
+    margin-right: 15px;
+}
+
+.glass-kiwi .kalendar {
+    margin: 30px 20px;
+}
+
+.glass-kiwi p {
+    width: 348px;
+    height: 50px;
+    margin-top: 130px;
+    padding: 20px;
+    color: white;
+}
+
+.beans {
+    background-image: url("images/beans.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 487px;
+    z-index: 10;
+    margin-right: -10px;
+}
+
+.beans .kalendar {
+    margin: 187px 0 0 20px;
+}
+
+.beans p {
+    color: white;
+    margin-top: 130px;
+    padding: 20px;
+    width: 348px;
+    height: 50px;
+}
+
+.raspberries {
+    background-image: url("images/raspberries.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    height: 327px;
+}
+
+.raspberries .kalendar {
+    margin: 26px 0 0 60px;
+}
+
+.raspberries p {
+    color: white;
+    margin-top: 130px;
+    padding: 20px;
+    width: 348px;
+    height: 50px;
+}
+
+.blog-button {
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: #f72b3b;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: 80px;
+}
+
+.kalendar {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16;
+    font-weight: bold;
+}
+
+
+/* contact */
+
+.contact {
+    background-image: url("images/contact-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 956px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact-text {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.contact-text h1 {
+    width: 100%;
+    font-size: 75px;
+    margin-bottom: 5px;
+}
+
+.contact-text p {
+    width: 400px;
+}
+
+.contact-form {
+    width: 500px;
+    margin-left: 205px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contact-form input {
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 196, 196, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.contact-form textarea {
+    background-color: rgba(0, 196, 196, 0.5);
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgba(0, 196, 196, 1);
+}
+
+.contact-address {
+    margin-left: 250px;
+    font-family: 'Roboto', sans-serif;
+}
