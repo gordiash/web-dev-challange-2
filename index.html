@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Chivo:900|Lato|Pacifico" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <header class="top">
+        <header id="Main" class="top">
             <nav>
-                <div class="logo">Cahee</div>
+                <div class="logo"><a href="#Main">Cahee</a></div>
                 <div class="menu">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
-                            <a href="#">About</a>
-                            <a href="#">Services</a>
-                            <a href="#">Gallery</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Contact</a>
+                            <a href="#Main">Home</a>
+                            <a href="#About">About</a>
+                            <a href="#Services">Services</a>
+                            <a href="#Gallery">Gallery</a>
+                            <a href="#Blog">Blog</a>
+                            <a href="#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +45,7 @@
 
         <!-- About -->
 
-        <section class="about">
+        <section id="About" class="about">
             <div class="img">
                 <img src="images/cup.png" alt="Cup">
             </div>
@@ -62,7 +63,7 @@
 
         <!-- Services -->
 
-        <section class="services">
+        <section id="Services" class="services">
             <div class="cards">
 
                 <div class="online-shopping">
@@ -110,14 +111,14 @@
 
 <!-- gallery -->
 
-<section class="gallery">
+<section id="Gallery" class="gallery">
 
 <div class="gallery-text">
     <h1>Gallery</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, itaque quae eos ullam facilis nulla molestias voluptatum optio. Labore ullam delectus nisi laudantium nihil totam saepe commodi ducimus non ipsam.</p>
 </div>
 <div class="gallery-img">
-    <img class="peach" src="images/peach.png" alt="Peach" srcset="">
+    <img class="peach " src="images/peach.png" alt="Peach" srcset="">
     <img class="blueberries" src="images/blueberries.png" alt="Blueberries" srcset="">
     <img class="blackberries" src="images/blackberries.png" alt="Blackberries" srcset="">
     <img class="glass" src="images/glass.png" alt="Glass" srcset="">
@@ -143,7 +144,7 @@
 </section>
 
 <!-- Blog -->
-<section class="blog">
+<section id="Blog" class="blog">
 
 <div class="blog-text">
     <h1>Blog</h1>
@@ -172,7 +173,7 @@
 
 <!-- Contact -->
 
-<section class="contact">
+<section id="Contact" class="contact">
 <div class="contact-text">
     <h1>Contact</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quibusdam voluptas.</p>
@@ -184,6 +185,8 @@
     <input type="phone" placeholder="Your phone number">
 
     <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+
+    <button class="contact-button">Send</button>
 
 </div>
 
@@ -205,6 +208,9 @@
 
 
     </div>
+
+
+    <script src="ap.js"></script>
 </body>
 
 </html>
