@@ -8,14 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Chivo:900|Lato|Pacifico" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <header id="Main" class="top">
-            <nav>
+        <nav class="nav">
+
                 <div class="logo"><a href="#Main">Cahee</a></div>
                 <div class="menu">
                     <ul>
@@ -28,16 +29,35 @@
                             <a href="#Contact">Contact</a>
                         </li>
                     </ul>
+                   
                 </div>
-
+                
+                <div class="mobile-menu" id="mobile-menu">
+                    <ul>
+                        <li>
+                            <a href="#Main">Home</a>
+                            <a href="#About">About</a>
+                            <a href="#Services">Services</a>
+                            <a href="#Gallery">Gallery</a>
+                            <a href="#Blog">Blog</a>
+                            <a href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="hamburger"><i class="fas fa-bars fa-2x"></i></span> 
 
             </nav>
 
-            <div class="top-content">
+
+    <div class="container">
+        <header id="Main" class="header">
+            
+
+            <div class="header-text">
                 <h1>Fresh Life</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem officiis, nihil autem voluptas dicta
                     repellendus, facilis doloribus, illo ad cum consectetur </p>
-                <button>Get free now</button>
+                <div class="header-button"><span>Get free now</span></div>
             </div>
 
             <div class="mouse"></div>
@@ -46,7 +66,7 @@
         <!-- About -->
 
         <section id="About" class="about">
-            <div class="img">
+            <div class="about-img">
                 <img src="images/cup.png" alt="Cup">
             </div>
 
@@ -64,49 +84,52 @@
         <!-- Services -->
 
         <section id="Services" class="services">
-            <div class="cards">
+                
+            <div class="services-cards">
 
-                <div class="online-shopping">
-                    <div class="online-shopping-text">
+                <div class="service-card">
+                    <div class="service-card-text">
                         <p>Online Shopping</p>
                     </div>
 
-                    <div class="online-shopping-img">
+                    <div class="service-card-img">
                         <img src="images/cart.png" alt="Cart">
                     </div>
 
                 </div>
-                <div class="quality">
-                    <div class="quality-text">
+                <div class="service-card">
+                    <div class="service-card-text">
                         <p>Quality Product</p>
                     </div>
-                    <div class="quality-img">
+                    <div class="service-card-img">
                         <img src="images/hand.png" alt="Hand">
                     </div>
 
                 </div>
-                <div class="delivery">
-                    <div class="delivery-text">
+                <div class="service-card">
+                    <div class="service-card-text">
                         <p>Domestic & International Delivery </p>
                     </div>
-                    <div class="delivery-img">
+                    <div class="service-card-img">
                         <img src="images/earth.png" alt="Earth">
                     </div>
 
                 </div>
-                <div class="well-organized">
-                    <div class="well-organized-text">
+                <div class="service-card">
+                    <div class="service-card-text">
                         <p>Well organized</p>
                     </div>
-                    <div class="well-organized-img">
+                    <div class="service-card-img">
                         <img src="images/carrot.png" alt="Carrot">
                     </div>
 
                 </div>
             </div>
-            <div class="services-tomatoes">
-                <h1>Our Services</h1>
-            </div>
+
+            <div class="services-title">
+                    <h1>Our Services</h1>
+                </div>
+            
         </section>
 
 <!-- gallery -->
@@ -117,15 +140,21 @@
     <h1>Gallery</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, itaque quae eos ullam facilis nulla molestias voluptatum optio. Labore ullam delectus nisi laudantium nihil totam saepe commodi ducimus non ipsam.</p>
 </div>
-<div class="gallery-img">
-    <img class="peach " src="images/peach.png" alt="Peach" srcset="">
-    <img class="blueberries" src="images/blueberries.png" alt="Blueberries" srcset="">
-    <img class="blackberries" src="images/blackberries.png" alt="Blackberries" srcset="">
-    <img class="glass" src="images/glass.png" alt="Glass" srcset="">
-    <img class="pepper" src="images/pepper.png" alt="Pepper" srcset="">
 
+<!-- slider -->
+<div class="slider">
+        <button class="button-left" onclick="nextSlide(-1)"><i class="fas fa-angle-left fa-2x"></i></button>
+        <img class="slides" src="images/peach.png" alt="Peach" srcset="">
+        <img class="slides" src="images/blueberries.png" alt="Blueberries" srcset="">
+        <img class="slides" src="images/blackberries.png" alt="Blackberries" srcset="">
+        <img class="slides" src="images/glass.png" alt="Glass" srcset="">
+        <img class="slides" src="images/pepper.png" alt="Pepper" srcset="">
+
+    
+    <button class="button-right" onclick="nextSlide(1)"><i class="fas fa-angle-right fa-2x"></i></button>
 </div>
 
+    <div class="gallery-button">View more</div>
 </section>
 
 
@@ -137,10 +166,10 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque voluptates accusamus corporis esse, veniam </p>
 
 </div>
-
-<input class="subscribe-input" type="email">
-<button class="subscribe-button">Subscribe</button>
-
+<div class="subscribe-form">
+<input class="subscribe-input" name="email" type="email">
+<div class="subscribe-button" type="submit">Subscribe</div>
+</div>
 </section>
 
 <!-- Blog -->
@@ -151,23 +180,23 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, mollitia maiores saepe dicta quis impedit praesentium quas laudantium ullam, aperiam ut libero hic repellat</p>
 </div>
 
-<div class="blog-img">
-    <div class="glass-kiwi">
-        <div class="kalendar">20 Nov</div>
+<div class="blog-cards">
+    <div class="blog-card1">
+        <div class="blog-calendar">20 Nov</div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
     </div>
 
-    <div class="beans">
-        <div class="kalendar">20 Nov</div>
+    <div class="blog-card2">
+        <div class="blog-calendar">20 Nov</div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
     </div>
-    <div class="raspberries">
-        <div class="kalendar">20 Nov</div>
+    <div class="blog-card3">
+        <div class="blog-calendar">20 Nov</div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
     </div>
 
 </div>
-<button class="blog-button">View More</button>
+<div class="blog-button">View More</div>
 
 </section>
 
@@ -180,15 +209,14 @@
 </div>
 
 <div class="contact-form">
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <input type="phone" placeholder="Your phone number">
+    <input type="text" name="name" placeholder="Name">
+    <input id="contact-email" type="email" name="email" placeholder="Email">
+    <input type="phone" name="phone" placeholder="Your phone number">
 
-    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
-
-    <button class="contact-button">Send</button>
-
+    <textarea name="message" id="" cols="30" rows="30" placeholder="Your message..."></textarea>
+    <div class="contact-button">Send</div>
 </div>
+
 
 <div class="contact-address">
     <address>
